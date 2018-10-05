@@ -1,16 +1,17 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #EEEEEE;
 }
 
 #container {
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
   justify-items: center;
 }
-
 
 #main {
   max-width: 720px;
@@ -25,7 +26,7 @@ body {
     grid-template-columns: auto 1fr;
   }
   #main {
-
+    position: relative;
     p {
       font-size: 24px;
     }
