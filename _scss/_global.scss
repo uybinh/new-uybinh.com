@@ -1,3 +1,33 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #EEEEEE;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+}
+
+
+#main {
+  max-width: 720px;
+  padding: 50px;
+  p {
+    font-size: 24px;
+  }
+}
+
+@include respond-above(sm) {
+  #container {
+    grid-template-columns: auto 1fr;
+  }
+  #main {
+
+    p {
+      font-size: 24px;
+    }
+  }
 }

@@ -10,7 +10,13 @@
 </head>
 
 <body>
-  {{ content }}
+  <div id="container">
+    {% include navbar.html %}
+    <main id="main">
+      {{ content }}
+    </main>
+  </div>
+
 </body>
 
 </html>

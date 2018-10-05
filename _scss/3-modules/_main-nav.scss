@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@include respond-above(sm) {
   #main-nav {
     position: relative;
     width: 140px;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include respond-below(sm) {
   #main-nav {
     position: relative;
     width: 100%;
@@ -158,7 +158,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@include respond-below(xs) {
   #main-nav {
     display: grid;
     grid-template-columns: 90px 1fr;
@@ -178,7 +178,5 @@
         line-height: 25px;
       }
     }
-
-
   }
 }
