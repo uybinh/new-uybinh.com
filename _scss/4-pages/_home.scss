@@ -35,3 +35,14 @@
     left: 50%;
   }
 }
+
+#prompt {
+  display: inline-block;
+  width: 0.5em;
+  height: .75em;
+  background-color: $main-orange;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
