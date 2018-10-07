@@ -19,10 +19,24 @@
     padding-left: 40px;
   }
   .project-img {
+    position: relative;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
     transition: transform .2s ease-out, box-shadow .2s ease-out;
+    .slide-content {
+      position: absolute;
+      bottom: -2rem;
+      left: 0;
+      width: 100%;
+      line-height: 2rem;
+      text-align: center;
+      color: #eee;
+      font-weight: 800;
+      opacity: .8;
+      background: $main-orange;
+      transition: transform .2s ease-out;
+    }
     img {
       display: block;
       max-width: 320px;
@@ -31,6 +45,9 @@
   .project-img:hover {
     transform: scale(1.05);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    .slide-content {
+      transform: translate(0, -100%);
+    }
   }
   .stack-list {
     margin-top: 10px;
@@ -61,6 +78,11 @@
         img {
           max-width: none;
           width: 100%;
+        }
+      }
+      .project-img {
+        .slide-content {
+          transform: translate(0, -100%);
         }
       }
       article {
