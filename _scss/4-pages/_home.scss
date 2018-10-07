@@ -1,0 +1,37 @@
+#home {
+  max-width: 720px;
+  padding: 50px;
+  h1 {
+    line-height: 1.1;
+  }
+  p {
+    font-size: 24px;
+  }
+  .special {
+    background-color: #3F88C5;
+    color: #fff;
+  }
+}
+
+.decoration-shape {
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  width: 400px;
+  height: 2000px;
+  background-color: $main-orange;
+  transform-origin: 0 100%;
+  transform: rotate(80deg);
+}
+
+@include respond-above(sm) {
+  #home {
+    position: relative;
+    p {
+      font-size: 24px;
+    }
+  }
+  .decoration-shape {
+    left: 50%;
+  }
+}
