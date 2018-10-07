@@ -1,6 +1,7 @@
 #home {
   max-width: 720px;
-  padding: 50px;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
   h1 {
     line-height: 1.1;
   }
@@ -8,31 +9,23 @@
     font-size: 24px;
   }
   .special {
-    background-color: #3F88C5;
+    background: linear-gradient(to right, hsl(154, 61%, 40%), hsl(182, 77%, 40%));
     color: #fff;
   }
 }
 
-.decoration-shape {
-  position: fixed;
-  bottom: 0;
-  left: 10%;
-  width: 400px;
-  height: 2000px;
-  background-color: $main-orange;
-  transform-origin: 0 100%;
-  transform: rotate(80deg);
-}
-
 @include respond-above(sm) {
   #home {
-    position: relative;
-    p {
-      font-size: 24px;
-    }
+    min-height: calc(100vh - 30px);
   }
   .decoration-shape {
     left: 50%;
+  }
+}
+
+@include respond-below(sm) {
+  h1 {
+    font-size: 34px;
   }
 }
 
