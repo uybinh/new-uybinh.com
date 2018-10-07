@@ -1,16 +1,16 @@
 <nav id='main-nav'>
   <div class="logo"><a href="/">UB</a></div>
   <ul>
-    <a href="/about">
+    <a href="{{ 'about' | prepend: site.baseurl }}">
       <li>About</li>
     </a>
-    <a href="/porfolio">
+    <a href="{{ 'porfolio' | prepend: site.baseurl }}">
       <li>Porfolio</li>
     </a>
-    <a href="/contact">
+    <a href="{{ 'contact' | prepend: site.baseurl }}">
       <li>Contact</li>
     </a>
-    <a href="/hobbies">
+    <a href="{{ 'hobbies' | prepend: site.baseurl }}">
       <li>Hobbies</li>
     </a>
   </ul>
