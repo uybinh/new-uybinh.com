@@ -1,10 +1,15 @@
+#main-nav {
+  a {
+    color: inherit;
+  }
+}
+
 @include respond-above(sm) {
   #main-nav {
     position: relative;
     width: 140px;
     min-height: 100vh;
     background-color: $white;
-
     .logo {
       position: absolute;
       top: 20px;
@@ -13,7 +18,6 @@
       font-weight: 800;
       line-height: 48px;
     }
-
     .logo::after {
       content: '';
       @include position(absolute, 8px -20px null null);
@@ -22,7 +26,6 @@
       width: 15px;
       background-color: $main-orange;
     }
-
     ul {
       position: relative;
       top: 180px;
@@ -30,11 +33,9 @@
       padding: 0;
       padding-right: 20px;
       margin: 0;
-
       a {
         color: inherit;
       }
-
       li {
         position: relative;
         padding-bottom: 10px;
@@ -54,20 +55,16 @@
         height: 12px;
         background-color: $main-orange;
       }
-
       li::after {
         width: 0;
         transition: width 0.2s ease-out;
       }
-
       li:hover {
         color: inherit;
       }
-
       li:hover::after {
         width: 12px;
       }
-
       a.selected {
         li {
           color: $main-orange;
@@ -86,7 +83,6 @@
     width: 100%;
     height: 50px;
     background-color: $white;
-
     .logo {
       float: left;
       position: relative;
@@ -95,7 +91,6 @@
       font-weight: 800;
       line-height: 50px;
     }
-
     .logo::before {
       content: '';
       position: relative;
@@ -107,7 +102,6 @@
       width: 27px;
       background-color: $main-orange;
     }
-
     ul {
       float: left;
       position: relative;
@@ -115,11 +109,9 @@
       padding: 0;
       padding-right: 20px;
       margin: 0;
-
       a {
         color: inherit;
       }
-
       li {
         display: inline-block;
         position: relative;
@@ -132,20 +124,16 @@
         color: $unselected-text;
         transition: color .2s ease-out;
       }
-
       li::after {
         width: 0;
         transition: width 0.2s ease-out;
       }
-
       li:hover {
         color: inherit;
       }
-
       li:hover::after {
         width: 12px;
       }
-
       a.selected {
         li {
           color: $main-orange;
@@ -171,7 +159,6 @@
       grid-template-rows: 1fr 1fr;
       justify-items: center;
       height: 50px;
-
       li {
         padding: 0;
         margin: 0;
