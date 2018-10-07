@@ -55,7 +55,7 @@
     }
   }
   @include respond-below(sm) {
-    .section {
+    .project {
       grid-template-columns: auto;
       .project-img {
         img {
