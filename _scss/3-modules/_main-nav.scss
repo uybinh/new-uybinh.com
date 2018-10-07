@@ -24,7 +24,7 @@
   }
 }
 
-@include respond-above(sm) {
+@include respond-above(md) {
   #main-nav {
     position: fixed;
     top: 0;
@@ -80,7 +80,7 @@
   }
 }
 
-@include respond-below(sm) {
+@include respond-below(md) {
   #main-nav {
     position: fixed;
     top: 0;
