@@ -44,4 +44,27 @@ footer {
     text-align: right;
     margin: 0;
   }
+  .social-links {
+    padding: 0 .5rem;
+    ul {
+      display: inline-block;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      margin-left: .5rem;
+      font-size: 18px;
+      i {
+        transition: transform .4s ease-out;
+      }
+    }
+    li:hover {
+      i {
+        transform: rotateY(180deg);
+      }
+    }
+    a {
+      color: white;
+    }
+  }
 }
