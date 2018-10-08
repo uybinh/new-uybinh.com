@@ -1,0 +1,45 @@
+#about {
+  width: 100%; // padding: 20px;
+  .content {
+    padding: 20px;
+    background: linear-gradient(to right, hsl(154, 61%, 40%), hsl(182, 77%, 40%));
+    p {
+      display: block;
+      margin: 0 auto;
+      max-width: 720px;
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+    }
+  }
+  h4 {
+    margin: 15px 0;
+  }
+  section.resume {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  section section {
+    margin: 30px 0;
+  }
+  li {
+    list-style: none;
+  }
+  table {
+    width: 100%;
+  }
+  td.project-name {
+    width: 30%;
+  }
+  #employment,
+  #education,
+  #certifications {
+    td:first-child {
+      width: 25%;
+    }
+    td:nth-child(2) {
+      width: 45%;
+      padding: 0 5px;
+    }
+  }
+}
