@@ -1,9 +1,34 @@
 #contact {
-  padding: 50px;
   a {
-    color: hsl(154, 61%, 30%);
+    color: inherit;
+    transition: color .2s ease-out;
+  }
+  a:hover {
+    color: $main-orange;
+    .icon {
+      transform: rotateY(180deg);
+    }
+  }
+  ul {
+    max-width: 720px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   li {
-    font-size: 1.5rem;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .contact .icon {
+    font-size: 48px;
+    transition: transform .2s ease-out;
+  }
+  .contact div:last-child {
+    font-weight: 800;
   }
 }
