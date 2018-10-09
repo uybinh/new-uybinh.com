@@ -17,8 +17,8 @@ title: Uy Binh' home page
 email: uybinh@gmail.custom
 description: >- # this means to ignore newlines until "baseurl:"
   'Uy Binh home page'
-baseurl: "/new-uybinh.com" # the subpath of your site, e.g. /blog
-url: "https://uybinh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://uybinh.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: uybinh
 github_username: uybinh
 
