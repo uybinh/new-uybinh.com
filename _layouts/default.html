@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google AdSense -->
+    <script
+      async
+      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script>
+      ;(adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6059479510847096",
+        enable_page_level_ads: true
+      })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-128525691-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      gtag("config", "UA-128525691-1")
+    </script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128525691-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="Phan Uy Bình - Web Developer" />
+    <meta
+      property="og:image"
+      content="{{ site.baseurl}}/assets/img/favicons/icon_1024@1x.png"
+    />
+    {% include favicons.html %}
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"
+    />
+    <script src="{{ '/assets/js/functions.js' | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
+    <title>{{ page.title }} - Phan Uy Bình - Web Developer</title>
+  </head>
 
-    gtag('config', 'UA-128525691-1');
-  </script>
-
-  <!-- Open Graph protocol -->
-  <meta property="og:title" content="Phan Uy Bình - Web Developer" />
-  <meta property="og:image" content="{{ site.baseurl}}/assets/img/favicons/icon_1024@1x.png" />
-  {% include favicons.html %}
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
-  <script src="{{ '/assets/js/functions.js' | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
-  <title>{{ page.title }} - Phan Uy Bình - Web Developer</title>
-</head>
-
-<body>
-  {% include navbar.html %}
-  <div class="container">
-    {{ content }}
-    {% include footer.html %}
-  </div>
-
-</body>
-
+  <body>
+    {% include navbar.html %}
+    <div class="container">{{ content }} {% include footer.html %}</div>
+  </body>
 </html>
