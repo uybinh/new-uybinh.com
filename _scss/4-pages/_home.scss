@@ -11,6 +11,9 @@
     background: linear-gradient(to right, hsl(154, 61%, 40%), hsl(182, 77%, 40%));
     color: #fff;
   }
+  article.center {
+    text-align: center;
+  }
 }
 
 @include respond-above(sm) {
